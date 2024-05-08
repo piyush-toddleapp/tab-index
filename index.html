@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Tabindex Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid black;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .box:focus {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>Random Tabindex Example</h2>
+
+  <p>Click on the boxes or use the Tab key to navigate between them.</p>
+
+  <div class="box" tabindex="0">Tabindex 0</div>
+  <div class="box" tabindex="1">Tabindex 1</div>
+  <div class="box" tabindex="3">Tabindex 3</div>
+  <div class="box" tabindex="-1">Tabindex -1</div>
+  <div class="box" tabindex="0">Tabindex 0</div>
+  <div class="box" tabindex="2">Tabindex 2</div>
+  <div class="box">No tabindex</div>
+
+</body>
+</html>
